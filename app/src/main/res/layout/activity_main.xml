@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="4dp">
+
+        <ImageView
+        android:id="@+id/clickSol"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_sun"
+        app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/clickNuvem"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_rain" />
+
+        <ImageView
+            android:id="@+id/clickSolNuvem"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/nome_usuario"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/msgPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/mensagem_da_tela"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/msgPrincipal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@color/lightblue" />
+
+    <Button
+        android:id="@+id/botaoMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/botao_mensagem" />
+
+</RelativeLayout>

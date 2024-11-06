@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AplicativoMensagens</string>
+    <string name="nome_usuario">Olá, Usuário</string>
+    <string name="mensagem_da_tela">Mensagem da tela SQL</string>
+    <string name="botao_mensagem">Mensagem</string>
+    <string name="vamos_comecar">Vamos começar?</string>
+    <string name="digite_o_seu_nome">Digite o seu nome:</string>
+    <string name="salvar">Salvar</string>
+    <string name="validar_nome" />
+</resources>
